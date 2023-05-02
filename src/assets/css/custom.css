@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.nav__bar{
+    padding: 15px 30px;
+    background-color: #dac4c4;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.nav__bar ul{
+    list-style: none;
+    display: flex;
+}
+.nav__bar ul li{
+    padding: 0px 15px;
+}
+.nav__bar ul li a{
+    text-decoration: none;
+}

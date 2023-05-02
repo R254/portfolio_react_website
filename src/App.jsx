@@ -1,7 +1,10 @@
+import { Navbar} from "./components"
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+      <Navbar/>
+    </>
   )
 }
 
