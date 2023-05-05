@@ -21,3 +21,9 @@
 .nav__bar ul li a{
     text-decoration: none;
 }
+.nav__bar ul li a:hover{
+    color: red;
+}
+.active{
+    color: red;
+}
