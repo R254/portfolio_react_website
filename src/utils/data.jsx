@@ -18,5 +18,10 @@ export const nav_links = [
         id:4,
         name:'Contact',
         path:'/contact'
+    },
+    {
+        id:4,
+        name:'Login',
+        path:'/login'
     }
 ]

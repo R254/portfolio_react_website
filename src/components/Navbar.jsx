@@ -4,7 +4,9 @@ import { nav_links } from '../utils/data'
 import { useState } from 'react'
 
 const Navbar = () => {
+    
     const [showMenu, setShowMenu] = useState(true)
+
   return (
     <header className='bg-white'>
         <nav className='flex justify-between items-center w-[87%] mx-auto'>
@@ -15,13 +17,13 @@ const Navbar = () => {
             </div>
             <div className={
                 `${showMenu ? 
-            'md:static absolute bg-whit md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5': 
-            'md:static absolute bg-whit md:min-h-fit min-h-[60vh] left-0 top-[9%] md:w-auto w-full flex items-center px-5'}`
+            'md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5': 
+            'md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[8%] md:w-auto w-full flex items-center px-5'}`
             }>
                 <ul className='flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8'>
                     {nav_links.map(({name,path}, index) => (
                         <li key={index}>
-                            <NavLink to={path} className={({isActive}) => isActive ? 'hover:text-gray-500' : 'hover:text-gray-500'}>
+                            <NavLink to={path} className={({isActive}) => isActive ? 'hover:text-gray-500' : 'hover:text-gray-500'} onClick={()=> setShowMenu(!showMenu)}>
                                 {name}
                             </NavLink>
                         </li>
